@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>hello</h1>
+{% endblock %}
+{% block script %}
+  {% assets 'hello_js' %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+  {% endassets %}
+{% endblock %}
